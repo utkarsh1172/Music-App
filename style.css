@@ -1,0 +1,112 @@
+body{
+    background-color: wheat;
+
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
+}
+
+.brand img{
+    width: 200px;
+    height: 60px;
+    max-width: 50%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    
+}
+nav li.navbar{
+    margin: 20px;
+  
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.png');
+    
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    bottom :  0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border-radius: 20px;
+  
+  
+}
+.icons i{
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0 ;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 10px;
+
+
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 30px;
+
+} 
+
+.timestamp {
+    margin: 0 23px;
+   
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    padding-top: 12px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media screen and (max-width:650px){
+    .songItem{
+        font-size: 12px;
+    }
+    
+}
